@@ -10,7 +10,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 # Get a vagrant box
 
-Download a base box to get going:
+From Cygwin, download a base box to get going:
 
   vagrant box add precise64 http://files.vagrantup.com/precise64.box
 
