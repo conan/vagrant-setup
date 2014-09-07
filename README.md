@@ -26,20 +26,9 @@ You'll need a [Vagrantfile](https://github.com/conan/vagrant-setup/blob/master/V
 
 Fire up a box:
 
-    vagrant up linux
+    vagrant up
 
-There will be loads of crap in the output about outdated Vagrantfiles and VirtualBox-specific parameters, because vagrant likes to complain.  The shared folder bit will probably fail, saying:
+Connect to the box (on Windows you'll need cygwin or putty):
 
-    The following SSH command responded with a non-zero exit status.
-    Vagrant assumes that this means the command failed!
-
-    mount -t vboxsf -o uid=`id -u vagrant`,gid=`id -g vagrant` v-root /vagrant
-
-Details here: http://docs-v1.vagrantup.com/v1/docs/troubleshooting.html
-
-Connect to the box:
-
-    vagrant ssh linux
-
-Do some stuff to fix this:
+    vagrant ssh
 
