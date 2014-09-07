@@ -20,16 +20,7 @@ From Cygwin, download a base box to get going:
 
 # Vagrantfile
 
-You'll need a Vagrantfile to define some boxes:
-
-    config.vm.define :linux do |linux_config|
-        linux_config.vm.host_name = "linux"
-        linux_config.vm.box = "precise64"
-        config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-        linux_config.vm.network :hostonly, "33.33.33.33"
-        linux_config.vm.customize ["modifyvm", :id, "--memory", 1024]
-        linux_config.vm.share_folder "c-drive", "/c", "c:\\"
-    end
+You'll need a [Vagrantfile](https://github.com/conan/vagrant-setup/blob/master/Vagrantfile) to define some boxes.
 
 # Start it up
 
