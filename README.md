@@ -13,6 +13,10 @@ https://www.virtualbox.org/wiki/Downloads
 From Cygwin, download a base box to get going:
 
     vagrant box add precise64 http://files.vagrantup.com/precise64.box
+    
+# Install vbguest plugin for keeping VirtualBox Guest Additions in sync
+
+    vagrant plugin install vagrant-vbguest
 
 # Vagrantfile
 
